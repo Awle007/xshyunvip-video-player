@@ -8,7 +8,7 @@
 + 2024-06-13 在原项目的基础上更改了主题颜色、主体模块的尺寸、线路切换按钮，移除了定时关闭按钮。新增了各大视频网站的跳转按钮。（还添加了一些鸽鸽的小惊喜）
 
 ## 在线演示
-🔗 [https://v.xshyun.top](https://v.xshyun.top)
+🔗 [https://video.xshyun.top](https://video.xshyun.top)
 
 ## 截图
 ![PC截图](./demo-imgs/demo-screenshot.png 'PC截图')
