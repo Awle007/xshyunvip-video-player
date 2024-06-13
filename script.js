@@ -70,6 +70,6 @@ cancelBtn.addEventListener('click', (e) => {
 })
 function playAudio() {
   var audio = new Audio('public/jntm.mp3');
-  audio.volume = 0.4;
+  audio.volume = 0.7;
   audio.play();
 }
