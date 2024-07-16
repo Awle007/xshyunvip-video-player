@@ -1,5 +1,6 @@
 ## 在线演示
 🔗 [https://video.xshyun.top](https://video.xshyun.top)
+演示网站可以尽情享用，网站标题下有PC端和手机端的双端使用教程。
 
 ## Vip Video Player
 原项目：[Jiangmenghao / vip-video-player](https://github.com/Jiangmenghao/vip-video-player)
@@ -20,5 +21,4 @@
 ![手机截图](./demo-imgs/iPhone.png '手机截图')
 
 ## 感谢支持
-演示网站可以尽情享用，网站标题下有PC端和手机端的双端使用教程。
 喜欢的话可以点个Star，别忘记给原项目作者也点一个哦！
