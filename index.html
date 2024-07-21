@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="version" content="1.2.2">
+  <meta name="version" content="1.2.3">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, max-age=0">
   <title>XSH云视频</title>
-  <link rel="stylesheet" href="./style.css?v=1.2.2">
-  <link rel="icon" href="public/gw.png?v=1.2.2">
-  <link rel="apple-touch-icon" sizes="180x180" href="public/gw.png?v=1.2.2">
-  <link rel="android-chrome" sizes="192x192" href="public/gw.png?v=1.2.2">
-  <link rel="android-chrome" sizes="512x512" href="public/gw.png?v=1.2.2">
+  <link rel="stylesheet" href="./style.css?v=1.2.3">
+  <link rel="icon" href="public/gw.png?v=1.2.3">
+  <link rel="apple-touch-icon" sizes="180x180" href="public/gw.png?v=1.2.3">
+  <link rel="android-chrome" sizes="192x192" href="public/gw.png?v=1.2.3">
+  <link rel="android-chrome" sizes="512x512" href="public/gw.png?v=1.2.3">
 </head>
 <body>
   <div class="card">
     <div class="card-front">
-      <img src="public\bj.jpg?v=1.2.2" alt="cat">
+      <img src="public\bj.jpg?v=1.2.3" alt="cat">
       <div class="desc">
         <div class="text">XSH云视频</div>
   </div>
@@ -61,14 +61,29 @@
       </div>
       <form>
         <input type="url" id="media-url" placeholder="请输入视频链接" required autocomplete="off">
-        <div class="apis">
-          <input type="radio" id="api1" class="api" name="contact" value="https://www.yemu.xyz/?url=" checked>
-          <label for="api1">线路1</label>
-          <input type="radio" id="api2" class="api" name="contact" value="https://jx.xyflv.cc/?url=" checked>
-          <label for="api2">线路2</label>
-          <input type="radio" id="api3" class="api" name="contact" value="https://jx.xmflv.com/?url=" checked>
-          <label for="api3">线路3</label>
-        </div>
+        <div class="radio-buttons-container">
+          <div class="radio-button">
+            <input name="contact" id="api1" class="api" type="radio" value="https://www.yemu.xyz/?url=" checked>
+            <label for="api1" class="radio-button__label">
+              <span class="radio-button__custom"></span>
+                  线路1
+            </label>
+          </div>
+          <div class="radio-button">
+            <input name="contact" id="api2" class="api" type="radio" value="https://jx.xyflv.cc/?url=" checked>
+            <label for="api2" class="radio-button__label">
+              <span class="radio-button__custom"></span>
+                  线路2
+            </label>
+          </div>
+          <div class="radio-button">
+            <input name="contact" id="api3" class="api" type="radio" value="https://jx.xmflv.com/?url=" checked>
+            <label for="api3" class="radio-button__label">
+              <span class="radio-button__custom"></span>
+                  线路3
+            </label>
+          </div>
+          </div>
         <button type="submit" class="play">播放</button>
       </form>
     </div>
@@ -96,6 +111,6 @@
     </p>
 </footer>
   </div>
-  <script src="./script.js?v=1.2.2"></script>
+  <script src="./script.js?v=1.2.3"></script>
 </body>
 </html>
