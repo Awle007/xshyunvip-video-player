@@ -115,20 +115,23 @@ body {
 }
 
 .card-front form #media-url {
-  line-height: 35px;
-  outline: none;
-  padding-left: 20px;
-  border: 0;
-  border-radius: 25px;
-  font-size: 18px;
-  width: 100%; 
-  box-sizing: border-box;
-  box-shadow: inset 2px 2px 4px var(--input-left-top-color), 
-              inset -2px -2px 4px var(--input-right-bottom-color);
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #e6d1b5;
+  box-shadow: 6px 6px 12px #d89450,
+              -6px -6px 12px #e4d9b9;
+  font-size: medium;
+  font-weight: bold;
+  max-width: 200px;
+}
+
+.card-front form #media-url:focus {
+  outline-color: rgba(228, 211, 155, 0.86);
 }
 
 .card-front form #media-url:hover {
-  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  background: linear-gradient(145deg, #efd7ac, #ead4a8);
 }
 
 .card-front form .apis {
@@ -141,32 +144,35 @@ body {
 }
 
 .card-front form .play {
-  width: 40%;
-  line-height: 30px;
-  left: 50%;
-  transform: translateX(-75%);
-  align-self: flex-end;
-  outline: none;
-  border: 0;
-  border-radius: 25px;
-  background: linear-gradient(145deg, #EBB694, #D2B6AB);
-  box-shadow:  2px 2px 8px #CA8B7A, 
-                -2px -2px 8px #CA8B7A;
-  color: #643440;
-  font-size: 14px;
+  padding: 8px 25px;
+  color: hsl(33, 86%, 16%);
+  border-radius: 50px;
   cursor: pointer;
-  justify-content: space-around
-  
+  border: 0;
+  background-color: #EBB694;
+  box-shadow: 2px 2px 8px #CA8B7A, 
+             -2px -2px 8px #CA8B7A; 
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: linear-gradient(145deg, #EBB694, #D2B6AB);
+  font-size: 15px;
+  transition: all 0.5s ease;
 }
 
 .card-front form .play:hover {
-  background: #CA8B7A;
+  letter-spacing: 3px;
+  background-color: hsl(35, 59%, 49%);
+  color: hsl(36, 34%, 29%);
+  box-shadow: rgb(168, 93, 37) 0px 7px 29px 0px;
 }
 
 .card-front form .play:active {
-  background: linear-gradient(145deg, #D2B6AB, #e1c7bd);
-  box-shadow:  2px 2px 4px #CA8B7A, 
-                -2px -2px 4px #CA8B7A;
+  letter-spacing: 3px;
+  background-color: hsl(40, 64%, 54%);
+  color: hsl(36, 34%, 29%);
+  box-shadow: rgb(202, 146, 78) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
 }
 
 input[type="radio"] {
@@ -212,33 +218,43 @@ input[type="radio"]:hover {
 
 .card .card-back .return,
 .card .card-back .timer {
-  outline: none;
-  border: 0;
-  padding: 6px 6px 4px 6px;
-  border-radius: 15px;
-  background: var(--return-button-color);
-  box-shadow:  2px 2px 4px var(--shadow-right-bottom-color), 
-                -2px -2px 4px var(--shadow-left-top-color);
+  padding: 1.5px 12px;
+  color: hsl(33, 86%, 16%);
+  border-radius: 50px;
   cursor: pointer;
+  border: 0;
+  background-color: #EBB694;
+  box-shadow: 2px 2px 8px #CA8B7A, 
+             -2px -2px 8px #CA8B7A; 
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
+  background: linear-gradient(145deg, #EBB694, #D2B6AB);
   font-size: 15px;
-  .text {color: #643440;}
+  transition: all 0.5s ease;
 }
 
 .card .card-back .button-container .return {
   margin: auto;
-  left: 50%;
+  left: 30%;
   font-size: 15px;
 }
 
 .card .card-back .return:hover,
 .card .card-back .timer:hover {
-  background: linear-gradient(145deg, #CA8B7A, #e1c7bd);
+  letter-spacing: 3px;
+  background-color: hsl(35, 59%, 49%);
+  color: hsl(36, 34%, 29%);
+  box-shadow: rgb(168, 93, 37) 0px 7px 29px 0px;
 }
 
 .card .card-back .return:active,
 .card .card-back .timer:active {
-  box-shadow: inset 2px 2px 4px var(--shadow-right-bottom-color), 
-            inset -2px -2px 4px var(--shadow-left-top-color);
+  letter-spacing: 3px;
+  background-color: hsl(40, 64%, 54%);
+  color: hsl(36, 34%, 29%);
+  box-shadow: rgb(202, 146, 78) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
 }
 
 .copyright {
@@ -274,19 +290,19 @@ input[type="radio"]:hover {
 }
 
 .contact-button {
-  background-color: #DAB6A4; /* 设置按钮的背景颜色 */
-  border: none; /* 移除按钮的边框 */
-  border-radius: 10px; /* 设置按钮的圆角边框 */
-  padding: 2.5px 5px; /* 设置按钮内边距 */
-  text-align: center; /* 文字居中显示 */
-  text-decoration: none; /* 移除下划线 */
-  display: inline-block; /* 使按钮显示为行内块元素 */
-  font-size: 14px; /* 设置字体大小 */
-  cursor: pointer; /* 鼠标悬停时显示指针 */
+  background-color: #DAB6A4; 
+  border: none;
+  border-radius: 10px; 
+  padding: 2.5px 5px;
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 14px; 
+  cursor: pointer; 
 }
 
 .contact-button:hover {
-  background-color: #c09280; /* 鼠标悬停时的背景色 */
+  background-color: #c09280;
 }
 
 
@@ -401,11 +417,13 @@ input[type="radio"]:hover {
   }
 
   .card-front form #media-url {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
+    box-shadow: 6px 6px 12px #5f350b,
+                -6px -6px 12px #5f350b;
   }
 
   .card-front form #media-url:hover {
-    background: linear-gradient(145deg, #c3c3c3, #c3c3c3);
+    background: linear-gradient(145deg, #e5cda2, rgb(227, 190, 165));
   }
 
   .card-front form .play {
@@ -420,6 +438,14 @@ input[type="radio"]:hover {
   .copyright .author-link {
     color:  rgba(228, 63, 90, .8);
     background-color: rgba(255, 255, 255, .8);
+  }
+  
+  .contact-button {
+    background-color: #75414e; 
+  }
+
+  .contact-button:hover {
+    background-color: #b8694a; 
   }
 }
 .audio-play-button {
