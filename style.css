@@ -571,3 +571,33 @@ body {
 .audio-play-button:hover {
   opacity: 0.8;
 }
+
+.so {
+  display: inline-block; 
+  padding: 12.5px 30px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #b78080;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px; 
+  text-decoration: none;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.so:hover {
+  background-color: #83525e;
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.1);
+}
+
+.so:active {
+  background-color: #75414e;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+

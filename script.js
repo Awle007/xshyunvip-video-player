@@ -3,6 +3,22 @@ let returnBtn = document.querySelector('.card-back .return')
 let cancelBtn = document.querySelector('.cancel-btn')
 let delay
 
+document.addEventListener('DOMContentLoaded', function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const videoUrl = urlParams.get('videoUrl');
+  if (videoUrl) {
+      const mediaInput = document.getElementById('media-url');
+      mediaInput.value = decodeURIComponent(videoUrl);
+
+      const playButton = document.querySelector('button[type="submit"].play');
+      if (playButton) {
+          setTimeout(function() {
+              playButton.click();
+          }, 500);
+      }
+  }
+});
+
 window.onresize = function () {
   document.body.style.minHeight = window.innerHeight + 'px'
 }
