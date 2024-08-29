@@ -16,7 +16,6 @@ html {
   --shadow-left-top-color: #D2B6AB;
   --input-left-top-color: #D2B6AB;
   --input-right-bottom-color: #BD8E80;
-
   --return-button-color: #DAB6A4;
 }
 
@@ -30,7 +29,6 @@ body {
   padding: 0;
   -webkit-user-select: none;
   user-select: none;
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -108,6 +106,24 @@ body {
 
 .card-front .desc .link {
   font-size: 20px;
+  position: relative;
+  left: auto;
+  top: auto;
+  top: 0;
+  display: inline-block;
+}
+
+.card-front .desc img {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  left: auto;
+}
+
+.card-front .desc span {
+  display: inline-block;
+  position: relative;
+  align-items: center;
 }
 
 .card-front form {
@@ -119,6 +135,14 @@ body {
   align-items: center;
   position: relative;
 }
+
+.card-front .desc .link[target="_blank"] {
+  position: relative;
+  left: auto;
+  top: -5px;
+  display: inline-block;
+}
+
 
 .card-front form #media-url {
   border: none;
@@ -283,6 +307,92 @@ body {
   visibility: hidden;
   z-index: 10;
 }
+
+.audio-play-button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-left: 10px; 
+  background-image: url('public/cxk.jpg?v=1.0.1');
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.audio-play-button:hover {
+  opacity: 0.8;
+}
+
+.so {
+  display: inline-block; 
+  padding: 12.5px 30px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #b78080;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 17px; 
+  text-decoration: none;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.so:hover {
+  background-color: #83525e;
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.1);
+}
+
+.so:active {
+  background-color: #75414e;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+.tutorial-button {
+  display: inline-block;
+  padding: 5px 12px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #b78080;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+ }
+ 
+ .tutorial-button:hover {
+  background-color: #83525e;
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.1);
+}
+
+.tutorial-button:active {
+  background-color: #75414e;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+ 
+ @keyframes pulse512 {
+  0% {
+   box-shadow: 0 0 0 0 #05bada66;
+  }
+  70% {
+   box-shadow: 0 0 0 10px rgba(218, 103, 68, 0%);
+  }
+  100% {
+   box-shadow: 0 0 0 0 rgba(218, 103, 68, 0%);
+  }
+ }
+ 
 
 /* 背面 */
 
@@ -555,49 +665,3 @@ body {
     box-shadow: 0 0 10px #ebaf84;
   }
 }
-.audio-play-button {
-  width: 30px;
-  height: 30px;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  margin-left: 10px; 
-  background-image: url('public/cxk.jpg?v=1.0.1');
-  background-size: contain; 
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.audio-play-button:hover {
-  opacity: 0.8;
-}
-
-.so {
-  display: inline-block; 
-  padding: 12.5px 30px;
-  border: 0;
-  border-radius: 100px;
-  background-color: #b78080;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 17px; 
-  text-decoration: none;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-}
-
-.so:hover {
-  background-color: #83525e;
-  box-shadow: 0 0 20px #6fc5ff50;
-  transform: scale(1.1);
-}
-
-.so:active {
-  background-color: #75414e;
-  transition: all 0.25s;
-  -webkit-transition: all 0.25s;
-  box-shadow: none;
-  transform: scale(0.98);
-}
-
-

@@ -3,19 +3,19 @@ let returnBtn = document.querySelector('.card-back .return')
 let cancelBtn = document.querySelector('.cancel-btn')
 let delay
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const urlParams = new URLSearchParams(window.location.search);
   const videoUrl = urlParams.get('videoUrl');
   if (videoUrl) {
-      const mediaInput = document.getElementById('media-url');
-      mediaInput.value = decodeURIComponent(videoUrl);
+    const mediaInput = document.getElementById('media-url');
+    mediaInput.value = decodeURIComponent(videoUrl);
 
-      const playButton = document.querySelector('button[type="submit"].play');
-      if (playButton) {
-          setTimeout(function() {
-              playButton.click();
-          }, 500);
-      }
+    const playButton = document.querySelector('button[type="submit"].play');
+    if (playButton) {
+      setTimeout(function () {
+        playButton.click();
+      }, 500);
+    }
   }
 });
 
@@ -31,7 +31,7 @@ form.addEventListener('submit', (e) => {
   let api = document.querySelector('.api:checked').value
   let card = document.querySelector('.card')
   let player = document.querySelector('.player')
-  
+
   mediaInput.blur()
   card.classList.add('turn-to-back')
   delay = window.setTimeout(function () {
@@ -46,12 +46,6 @@ form.addEventListener('submit', (e) => {
   })
 })
 
-cancelBtn.addEventListener('click', (e) => {
-  setTimer.classList.remove('show-set-timer')
-  if(timer) {
-    window.clearTimeout(timer)
-  }
-})
 function playAudio() {
   var audio = new Audio('public/jntm.mp3');
   audio.volume = 1;
