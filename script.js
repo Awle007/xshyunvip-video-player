@@ -1,7 +1,7 @@
-let form = document.querySelector('form')
-let returnBtn = document.querySelector('.card-back .return')
-let cancelBtn = document.querySelector('.cancel-btn')
-let delay
+let form = document.querySelector('form');
+let returnBtn = document.querySelector('.card-back .return');
+let cancelBtn = document.querySelector('.cancel-btn');
+let delay;
 
 document.addEventListener('DOMContentLoaded', function () {
   const urlParams = new URLSearchParams(window.location.search);
