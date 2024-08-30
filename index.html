@@ -3,56 +3,71 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="version" content="1.5.0">
+  <meta name="version" content="1.5.4">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, max-age=0">
   <title>XSH云视频</title>
-  <link rel="icon" href="public/gw.png?v=1.5.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="public/gw.png?v=1.5.0">
-  <link rel="android-chrome" sizes="192x192" href="public/gw.png?v=1.5.0">
-  <link rel="android-chrome" sizes="512x512" href="public/gw.png?v=1.5.0">
-  <link id="theme-style" rel="stylesheet" href="light-theme.css?v=1.5.0">
-  <link id="theme-style" rel="stylesheet" href="dark-mode.css?v=1.5.0">
+  <link rel="icon" href="public/gw.png?v=1.5.4">
+  <link rel="apple-touch-icon" sizes="180x180" href="public/gw.png?v=1.5.4">
+  <link rel="android-chrome" sizes="192x192" href="public/gw.png?v=1.5.4">
+  <link rel="android-chrome" sizes="512x512" href="public/gw.png?v=1.5.4">
+  <link id="theme-style" rel="stylesheet" href="assets/light-theme.css?v=1.5.4">
+  <link id="theme-style" rel="stylesheet" href="assets/dark-mode.css?v=1.5.4">
   <meta name="description" content="XSH云视频解析-永久免费观看海量会员视频资源，支持各大视频平台在线解析。">
   <meta name="keywords" content="XSH云视频解析, 视频解析, 视频解析器, 在线视频播放, 免费观看VIP视频, 爱奇艺解析, 腾讯视频解析, 优酷视频解析, 会员视频免费看, 视频去广告">
-  <script src="theme.js?v=1.5.0" id="theme-script"></script>
-  <script src="jquery-3.6.0.min.js"></script>
+  <script src="assets/theme.js?v=1.5.4" id="theme-script"></script>
+  <script src="assets/jquery-3.6.0.min.js?v=1.5.4"></script>
 </head>
 
 <body>
   <div class="card">
     <div class="card-front">
-      <img src="public\bj.jpg?v=1.5.0" alt="bj">
+      <img src="public/bj.jpg?v=1.5.4" alt="bj">
       <div class="desc">
         <div class="text">XSH云视频</div>
-        <button class="btn-shine" id="theme-toggle">
-          <span>切换主题</span>
-        </button>
       </div>
       <div class="desc">
-        <button class="tutorial-button" onclick="window.open('https://jc.xshyun.top/', '_blank')">首次使用请点这里看教程视频</button>
+        <button class="tutorial-button" onclick="window.open('https://jc.xshyun.top/', '_blank')">
+          <span>使用教程</span></button>
+        <label class="switch" id="theme-toggle">
+          <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <path
+                d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
+              </path>
+            </svg></span>
+          <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <g fill="#ffd43b">
+                <circle r="5" cy="12" cx="12"></circle>
+                <path
+                  d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z">
+                </path>
+              </g>
+            </svg></span>
+          <input type="checkbox" class="input">
+          <span class="slider"></span>
+        </label>
       </div>
       <div class="desc">
         <span>
-          <img src="public\gw.png?v=1.1.7" alt="官网">
+          <img src="public/gw.png" alt="官网">
           <a href="https://www.xshyun.top" class="link" target="_blank">官网</a>
         </span>
         <span>
-          <img src="public\aiqiyi.png" alt="爱奇艺">
+          <img src="./public\aiqiyi.png" alt="爱奇艺">
           <a href="https://www.iqiyi.com/" class="link" target="_blank">爱奇艺</a>
         </span>
         <span>
-          <img src="public\txsp.png" alt="腾讯视频">
+          <img src="./public\txsp.png" alt="腾讯视频">
           <a href="https://v.qq.com/" class="link" target="_blank">腾讯视频</a>
         </span>
       </div>
       <div class="desc">
         <span>
-          <img src="public\mgtv.png" alt="芒果TV">
+          <img src="./public\mgtv.png" alt="芒果TV">
           <a href="https://www.mgtv.com/" class="link" target="_blank">芒果TV</a>
         </span>
         <span>
-          <img src="public\youku.png" alt="优酷">
+          <img src="./public\youku.png" alt="优酷">
           <a href="https://www.youku.com/" class="link" target="_blank">优酷</a>
         </span>
         <button class="audio-play-button" onclick="playAudio()"></button>
@@ -70,21 +85,21 @@
         <input type="url" id="media-url" placeholder="请输入视频链接" required autocomplete="off">
         <div class="radio-buttons-container">
           <div class="radio-button">
-            <input name="contact" id="api1" class="api" type="radio" value="https://jx.xmflv.com/?url=" checked>
+            <input name="contact" id="api1" class="api" type="radio" value="请在此替换你自己的播放源接口" checked>
             <label for="api1" class="radio-button__label tooltip" data-tooltip="✅优先选择|全平台万能">
               <span class="radio-button__custom"></span>
               线路1
             </label>
           </div>
           <div class="radio-button">
-            <input name="contact" id="api2" class="api" type="radio" value="https://jx.08qq.cn/player/?url=">
+            <input name="contact" id="api2" class="api" type="radio" value="请在此替换你自己的播放源接口">
             <label for="api2" class="radio-button__label tooltip" data-tooltip="✅次要线路，与线路1类似">
               <span class="radio-button__custom"></span>
               线路2
             </label>
           </div>
           <div class="radio-button">
-            <input name="contact" id="api3" class="api" type="radio" value="https://www.yemu.xyz/?url=">
+            <input name="contact" id="api3" class="api" type="radio" value="请在此替换你自己的播放源接口">
             <label for="api3" class="radio-button__label tooltip" data-tooltip="❗️请优先选择线路1,2">
               <span class="radio-button__custom"></span>
               线路3
@@ -121,7 +136,7 @@
     </p>
   </footer>
   </div>
-  <script src="./script.js?v=1.5.0"></script>
+  <script src="assets/script.js?v=1.5.4"></script>
 </body>
 
 </html>
