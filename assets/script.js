@@ -3,6 +3,39 @@ let returnBtn = document.querySelector('.card-back .return');
 let cancelBtn = document.querySelector('.cancel-btn');
 let delay;
 
+var version = '1.7.0';
+var storedVersion = localStorage.getItem('version');
+
+if (!storedVersion || storedVersion !== version) {
+    localStorage.setItem('version', version);
+    window.location.reload(true); 
+}
+
+var date = new Date();
+var formatter = new Intl.DateTimeFormat('zh-CN', {
+  timeZone: 'Asia/Shanghai',
+  year: 'numeric',
+  month: '2-digit',
+  day: '2-digit'
+});
+var today = formatter.format(date).split('/').join('-');
+
+var announcementCard = document.querySelector('.announcement-card');
+var overlay = document.querySelector('.overlay');
+
+if (!localStorage.getItem('announcementShown' + today)) {
+    announcementCard.style.display = 'block';
+    overlay.style.display = 'block';
+} else {
+    announcementCard.style.display = 'none';
+}
+
+function closeModal() {
+    announcementCard.style.display = 'none';
+    overlay.style.display = 'none';
+    localStorage.setItem('announcementShown' + today, 'true');
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   const urlParams = new URLSearchParams(window.location.search);
   const videoUrl = urlParams.get('videoUrl');
@@ -41,7 +74,6 @@ form.addEventListener('submit', (e) => {
   returnBtn.addEventListener('click', (e) => {
     player.src = ''
     card.classList.remove('turn-to-back')
-    mediaInput.value = ''
     window.clearTimeout(delay)
   })
 })
