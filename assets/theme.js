@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', function () {
     var currentTheme = themeLink.href.includes('dark-mode') ? 'dark' : 'light';
 
     if (prefersDarkScheme) {
-        themeLink.href = 'assets/dark-mode.css?v=1.9.4';
+        themeLink.href = 'assets/dark-mode.css?v=1.9.5';
         document.body.classList.add('dark-mode');
         document.body.classList.remove('light-theme');
     } else {
-        themeLink.href = 'assets/light-theme.css?v=1.9.4';
+        themeLink.href = 'assets/light-theme.css?v=1.9.5';
         document.body.classList.add('light-theme');
         document.body.classList.remove('dark-mode');
     }
@@ -23,12 +23,12 @@ document.addEventListener('DOMContentLoaded', function () {
     toggleInput.addEventListener('change', function () {
         var isDarkMode = this.checked;
         if (isDarkMode) {
-            themeLink.href = 'assets/dark-mode.css?v=1.9.4';
+            themeLink.href = 'assets/dark-mode.css?v=1.9.5';
             document.body.classList.add('dark-mode');
             document.body.classList.remove('light-theme');
             currentTheme = 'dark';
         } else {
-            themeLink.href = 'assets/light-theme.css?v=1.9.4';
+            themeLink.href = 'assets/light-theme.css?v=1.9.5';
             document.body.classList.add('light-theme');
             document.body.classList.remove('dark-mode');
             currentTheme = 'light';
@@ -37,13 +37,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
         if (e.matches) {
-            themeLink.href = 'assets/dark-mode.css?v=1.9.4';
+            themeLink.href = 'assets/dark-mode.css?v=1.9.5';
             document.body.classList.add('dark-mode');
             document.body.classList.remove('light-theme');
             currentTheme = 'dark';
             toggleInput.checked = true;
         } else {
-            themeLink.href = 'assets/light-theme.css?v=1.9.4';
+            themeLink.href = 'assets/light-theme.css?v=1.9.5';
             document.body.classList.add('light-theme');
             document.body.classList.remove('dark-mode');
             currentTheme = 'light';

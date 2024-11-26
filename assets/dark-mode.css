@@ -322,13 +322,13 @@ body {
 .dark-mode .history-button,
 .dark-mode .so {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 5px 10px;
   border: 0;
   border-radius: 100px;
   background-color: #ad480f;
   color: #ffffff;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 15px;
   text-decoration: none;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -593,14 +593,14 @@ body {
 }
 
 .dark-mode .vl-hover-button {
-  padding: 8px 16px;
+  padding: 7px 14px;
   background-color: #b88308;
   color: white;
   border: none;
   font-weight: bold;
   border-radius: 100px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 15px;
   transition: background-color 0.3s;
 }
 
