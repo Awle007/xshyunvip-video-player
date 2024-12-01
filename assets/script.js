@@ -3,7 +3,7 @@ let returnBtn = document.querySelector('.card-back .return');
 let cancelBtn = document.querySelector('.cancel-btn');
 let delay;
 
-var version = '1.9.4';
+var version = '1.9.7';
 var storedVersion = localStorage.getItem('version');
 
 if (!storedVersion || storedVersion !== version) {
@@ -63,7 +63,7 @@ const hiddenPlayerApi = '请更换您自己的解析地址（此处为切片解�
 function selectRouteBySource(source) {
   if (source === 'official') {
     document.getElementById('api1').checked = true;
-  } else if (source === 'hw8') {
+  } else if (source === 'heimuer') {
     document.querySelectorAll('.api').forEach(api => api.checked = false);
   } else {
     document.getElementById('api1').checked = true;
@@ -98,7 +98,7 @@ form.addEventListener('submit', (e) => {
   let mediaURL = mediaInput.value;
   let api;
   
-  if (videoSource === 'hw8') {
+  if (videoSource === 'heimuer') {
     api = hiddenPlayerApi;
   } else {
     api = document.querySelector('.api:checked').value;
