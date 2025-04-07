@@ -5,10 +5,6 @@
 🔗 [https://video.xshyun.top](https://video.xshyun.top)
 演示网站可以尽情享用，网站标题下有PC端和手机端的双端使用教程。
 
-## Vip Video Player
-原项目：[Jiangmenghao / vip-video-player](https://github.com/Jiangmenghao/vip-video-player)
-此项目仅用于Web开发学习、交流，请勿商用。
-
 ## 更新记录
 + 2025-04-07 搜索站重大更新，新增两条资源搜索线路。现在可以选择想看的源进行搜索，每条线路后方附有线路说明（仅本人测试结果，具体需要你们自己来感受）。另外添加了全局搜索功能，假设你想看的内容无法搜索到结果，则可以触发并使用全局搜索功能。
 + 2025-03-29 网站交互优化，现在在播放页面点击返回按钮时，不会再关闭网页，而是返回首页。
@@ -40,17 +36,21 @@
 ![PC截图](./demo-imgs/screenshot.png 'PC截图')
 ![PC截图](./demo-imgs/demo-screenshot-playing.png 'PC截图-视频播放')
 
+## 支持深色模式
+![PC截图](./demo-imgs/darkmode.png 'PC截图-深色模式')
+
 ## 搜索站
 ![PC截图](./demo-imgs/so.png '搜索站截图')
 
 ## 随机电影
 ![PC截图](./demo-imgs/random-movie.png '随机电影截图')
 
-## 支持深色模式
-![PC截图](./demo-imgs/darkmode.png 'PC截图-深色模式')
-
 ## 支持移动设备
 ![手机截图](./demo-imgs/iPhone.png '手机截图')
+
+## Vip Video Player
+原项目：[Jiangmenghao / vip-video-player](https://github.com/Jiangmenghao/vip-video-player)
+此项目仅用于Web开发学习、交流，请勿商用。
 
 ## 感谢支持
 喜欢的话可以点个Star，别忘记给原项目作者也点一个哦！
